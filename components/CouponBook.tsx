@@ -50,7 +50,8 @@ export default function CouponBook() {
     <>
       <div className="flex flex-col items-center rounded-md bg-gray-900 p-1 text-white">
         <p>
-          Collect 5 Dabubeators to receive a 50% discount on your next purchase!
+          Shop for Thingerators 5 times to receive a 50% discount on your next
+          purchase!
         </p>
 
         <p className="flex flex-row gap-1 place-self-center">
