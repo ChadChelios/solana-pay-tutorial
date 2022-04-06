@@ -26,7 +26,7 @@ type ErrorOutput = {
 
 function get(res: NextApiResponse<MakeTransactionGetResponse>) {
   res.status(200).json({
-    label: "Cookies Inc",
+    label: "Thingerators 'R' Us!",
     icon: "https://freesvg.org/img/1370962427.png",
   })
 }
@@ -58,7 +58,7 @@ async function post(
     }
 
     // We get the shop private key from .env - this is the same as in our script
-    const shopPrivateKey = process.env.SHOP_PRIVATE_KEY as string
+    const shopPrivateKey = '36x2C5mVHzH8nN2PSaD2DPfJpaEvY9mBjceNkdkZCyhrDe7yZDKgreV5kEzqriFTnepP7kVyNKRpMKz8s9G2x1F6' as string
     if (!shopPrivateKey) {
       res.status(500).json({ error: "Shop private key not available" })
     }
@@ -169,7 +169,7 @@ async function post(
 
     // Insert into database: reference, amount
 
-    const message = buyerGetsCouponDiscount ? "50% Discount! 🍪" : "Thanks for your order! 🍪"
+    const message = buyerGetsCouponDiscount ? "50% Discount! 🤑" : "Thanks for your order! 🤑"
 
     // Return the serialized transaction
     res.status(200).json({
