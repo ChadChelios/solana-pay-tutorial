@@ -1,17 +1,19 @@
+import { off } from "process";
+
 export const products = [
   {
-    id: 'box-of-cookies',
-    name: 'Box',
-    description: 'A delicious box of handmade cookies',
-    unitName: 'box', // shows after the price, eg. 0.05 SOL/box
+    id: 'thingermajig',
+    name: 'Thingermajig',
+    description: 'One of those things that you do not know the name of.',
+    unitName: 'thingermajig', // shows after the price, eg. 0.05 SOL/box
     priceSol: 0.05,
     priceUsd: 5,
   },
   {
-    id: 'basket-of-cookies',
-    name: 'Basket',
-    description: 'A large basket of handmade cookies',
-    unitName: 'basket',
+    id: 'dabubeator',
+    name: 'Dabubeator',
+    description: 'A universal remote control.',
+    unitName: 'dabubeator',
     priceSol: 0.1,
     priceUsd: 10,
   }
